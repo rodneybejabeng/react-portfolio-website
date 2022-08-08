@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Welcome To My Website!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is my portfolio website which houses all my other projects. The deployed version of the website can be found [here](https://google.com). This application was bootstrapped with [React](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
