@@ -1,5 +1,5 @@
 .nav-bar {
-    background: #000000;
+    background: #2d3848;
     width:60px;
     height: 100%;
     position: absolute;
@@ -19,8 +19,13 @@
         height: auto;
     }
 
+
     .filter-gray {
-        filter: invert(27%) sepia(2%) saturate(266%) hue-rotate(201deg) brightness(97%) contrast(85%);
+        filter: invert(71%) sepia(9%) saturate(77%) hue-rotate(314deg) brightness(98%) contrast(86%);
+    }
+
+    .filter-blue {
+        filter: invert(52%) sepia(10%) saturate(2390%) hue-rotate(157deg) brightness(87%) contrast(90%);
     }
 
 }
