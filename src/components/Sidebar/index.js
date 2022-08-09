@@ -5,7 +5,8 @@ import LogoSub from '../../assets/images/my-logo.png'
 import Home from '../../assets/images/house-chimney.svg'
 import User from '../../assets/images/user.svg'
 import Envelope from '../../assets/images/envelope.svg'
-
+import Linkedin from '../../assets/images/linkedin.svg'
+import GitHub from '../../assets/images/github.svg'
 
 const Sidebar = () => (
     <div className='nav-bar'>
@@ -24,6 +25,18 @@ const Sidebar = () => (
                 <img src= { Envelope } alt='logo' class='filter-gray' />
             </NavLink>
         </nav>
+        <ul>
+            <li>
+                <a target= '_blank' rel= 'noreferrer' href='https://www.linkedin.com/in/rodney-bejabeng/'>
+                    <img src= { Linkedin } alt= 'linkedin-logo' class= 'filter-gray' />
+                </a>
+            </li>
+            <li>
+                <a target= '_blank' rel= 'noreferrer' href='https://github.com/rodneybejabeng'>
+                    <img src= { GitHub } alt= 'github-logo' class= 'filter-gray' />
+                </a>
+            </li>
+        </ul>
     </div>
 )
 

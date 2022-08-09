@@ -33,9 +33,7 @@
 
     nav {
 
-        .filter-gray {
-            filter: invert(71%) sepia(9%) saturate(77%) hue-rotate(314deg) brightness(98%) contrast(86%);
-        }
+        
 
         display: block;
         text-align: left;
@@ -106,9 +104,17 @@
                 margin-left: -12px;
             }
         }
+
+        a.active {
+            img {
+                color: #6185c2;
+            }
+        }
     }
 
-    
+    .filter-gray {
+        filter: invert(71%) sepia(9%) saturate(77%) hue-rotate(314deg) brightness(98%) contrast(86%);
+    }
     
 
 
