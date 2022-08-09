@@ -11,20 +11,17 @@ const Sidebar = () => (
     <div className='nav-bar'>
         <Link className='logo' to='/'>
             <img src= { TempLogo } alt='logo' class= 'filter-blue' />
-            <img src= { LogoSub } alt='sub-logo' class= 'filter-gray' />
+            <img src= { LogoSub } alt= 'sub-logo' className='sub-logo' class= 'filter-gray' />
         </Link>
         <nav>
             <NavLink exact='true' activeclassname='active' to='/'>
                 <img src= { Home } alt='logo' class='filter-gray' />
-                <>Home</>
             </NavLink>
-            <NavLink exact='true' activeclassname='active' to='/about'>
+            <NavLink exact='true' activeclassname='active' className="about-link" to='/about'>
                 <img src= { User } alt='logo' class='filter-gray' />
-                <>New User</>
             </NavLink>
-            <NavLink exact='true' activeclassname='active' to='/contact'>
+            <NavLink exact='true' activeclassname='active' className='contact-link' to='/contact'>
                 <img src= { Envelope } alt='logo' class='filter-gray' />
-                <>Contact Us</>
             </NavLink>
         </nav>
     </div>

@@ -10,22 +10,108 @@
     .logo {
         display: block;
         padding: 8px 0;
+
+        .filter-blue {
+            filter: invert(52%) sepia(10%) saturate(2390%) hue-rotate(157deg) brightness(87%) contrast(90%);
+        }
+
+        img {
+            display: block;
+            margin: 4px auto;
+            width: 90%;
+            height: auto;
+            
+            
+    
+            &.sub-logo {
+                width: 50px;
+                
+            }
+        }
+    
     }
 
-    img {
+    nav {
+
+        .filter-gray {
+            filter: invert(71%) sepia(9%) saturate(77%) hue-rotate(314deg) brightness(98%) contrast(86%);
+        }
+
         display: block;
-        margin: 4px auto;
-        width: 40px;
-        height: auto;
+        text-align: left;
+        position: absolute;
+        margin-left: 25%;
+        height: 210px;
+        top: 50%;
+        margin-top: -180px;
+        width: 50%;
+        line-height: 75px;
+
+        a {
+            font-size: 22px;
+            color: #4d4d4e;
+            display: block;
+            line-height: 10px;
+            height: 75px;
+            position: relative;
+            text-decoration: none;
+
+            i {
+                transition: all .3s ease-out;
+            }
+
+            &:hover {
+                color: #6185c2;
+                img {
+                    opacity: 0;
+                }
+
+                &:after {
+                    opacity: 1;
+                }
+            }
+
+            &:after {
+                content: 'dummy text';
+                font-size: 9px;
+                letter-spacing: 2px;
+                position: absolute;
+                top: 5;
+                display: block;
+                width: 100%;
+                text-align: center;
+                opacity: 0;
+                transition: all .3s ease-out;
+            }
+
+            &:first-child {
+                &::after{
+                    content: 'HOME';
+                }
+            }
+            
+        }
+
+        a.about-link {
+            &::after {
+                content: 'ABOUT';
+                margin-left: -5px;
+            }
+        }
+        
+        a.contact-link {
+            &::after {
+                content: 'CONTACT';
+                text-align: center;
+                margin-left: -12px;
+            }
+        }
     }
 
+    
+    
 
-    .filter-gray {
-        filter: invert(71%) sepia(9%) saturate(77%) hue-rotate(314deg) brightness(98%) contrast(86%);
-    }
 
-    .filter-blue {
-        filter: invert(52%) sepia(10%) saturate(2390%) hue-rotate(157deg) brightness(87%) contrast(90%);
-    }
+    
 
 }
