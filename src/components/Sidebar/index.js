@@ -16,13 +16,13 @@ const Sidebar = () => (
         </Link>
         <nav>
             <NavLink exact='true' activeclassname='active' to='/'>
-                <img src= { Home } alt='logo' class='filter-gray' />
+                <img src= { Home } alt='logo' className='nav' class='filter-gray' />
             </NavLink>
             <NavLink exact='true' activeclassname='active' className="about-link" to='/about'>
-                <img src= { User } alt='logo' class='filter-gray' />
+                <img src= { User } alt='logo' className='nav' class='filter-gray' />
             </NavLink>
             <NavLink exact='true' activeclassname='active' className='contact-link' to='/contact'>
-                <img src= { Envelope } alt='logo' class='filter-gray' />
+                <img src= { Envelope } alt='logo' className='nav' class='filter-gray' />
             </NavLink>
         </nav>
         <ul>
