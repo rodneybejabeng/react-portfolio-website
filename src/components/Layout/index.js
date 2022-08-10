@@ -10,9 +10,9 @@ const Layout = () => {
             <span className='tags top-tags'></span>
             <Outlet />
             <span className='tags bottom-tags'>
-            Hi
+            Welcome
             <br />
-            <span className='bottom-tag-html'>Isabella!</span>
+            <span className='bottom-tag-html'>To Bejabeng.com!</span>
             </span>
 
         </div>
